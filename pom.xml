@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>groupId</groupId>
-    <artifactId>Amazon</artifactId>
+    <artifactId>Autodoc_course</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -27,14 +27,14 @@
                     </argLine>
                     <suiteXmlFiles>
                         <!--<suiteXmlFile>${basedir}${TEST_SUITE}.xml</suiteXmlFile>-->
-                        ${basedir}/src/test/java/testSuites/SuiteLesson30.xml
+                        ${basedir}/src/test/java/testSuites/AmazonAuthTests.xml
                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjweaver</artifactId>
-                        <version>1.9.19</version>
+                        <version>${aspectj.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>
