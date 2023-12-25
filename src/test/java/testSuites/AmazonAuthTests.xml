@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AmazonAuth" parallel="tests" thread-count="4">
+    
+    <listeners>
+        <listener class-name="listeners.ProjectListener"></listener>
+    </listeners>
+
+
+    <test name="Success login">
+        <classes>
+            <class name="testAmazonAuth.TestSuccessLogin"/>
+        </classes>
+    </test>
+    <test name="Login with invalid email">
+        <classes>
+            <class name="testAmazonAuth.TestAuthWIthNoRegisteredEmail"/>
+        </classes>
+    </test>
+    <test name="Login with invalid password">
+        <classes >
+            <class name="testAmazonAuth.TestLoginWrongPassword"></class>
+        </classes>
+    </test>
+    <test name="Login with invalid phone number">
+        <classes >
+            <class name="testAmazonAuth.TestAuthWithInvalidPhoneNumber"></class>
+        </classes>
+    </test>
+
+
+</suite>
