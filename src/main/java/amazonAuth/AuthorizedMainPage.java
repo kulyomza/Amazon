@@ -4,7 +4,7 @@ import io.qameta.allure.Step;
 
 public class AuthorizedMainPage implements IAuthorizedHeader{
 
-    @Step
+    @Step("Get greeting text")
     public String greetingText(){
         return authorizedMainPageI();
     }
